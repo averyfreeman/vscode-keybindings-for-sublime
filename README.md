@@ -1,8 +1,59 @@
-# VS Code keymaps for Sublime Text
+# Ongoing and evolving VS Code keymaps for Sublime Text 3
+---
 
-This repo lists some of the more popular VS Code keymaps that you may wish to use in Sublime Text 3.
+I use [VS Code](https://code.visualstudio.com/) for coding and [Sublime Text 3](https://www.sublimetext.com) for taking notes / as a (great) replacement for `notepad.exe` in Windows.
 
-There are a lot of [Sublime-to-VSCode keymap packages](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings) out there, but there don't seem to be any going the other way. I use VS Code most of the time, but I also use the [Zettelklasten method](https://zettelkasten.de/) for note-taking, and [this Sublime Text extension](https://github.com/renerocksai/sublime_zk) has been the best tool that I've found that it. I prefer VS Code as a text editor, so I want to stay familiar with their main key bindings while being able to use this Zettelklasten Sublime plugin.
+I began using a separate text editor for note taking because VS code has gotten too heavy with extensions to really be considered "light" anymore.  I like the keybindings and tab size control, and general extensibility, so this fork is an attempt to make it "feel" as much like VS Code as possible without becoming a cumbersome, slow-loading semi-IDE. 
+
+There are a lot of [Sublime-to-VSCode keymap packages](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings) out there, but there didn't seem to be any going the other way, until I found this one from [jennynz](https://github.com/jennynz/vscode-keybindings-for-sublime), which had been updated by[yasapurnama](https://github.com/yasapurnama/vscode-keybindings-for-sublime).
+
+ - [Compare]((https://github.com/jennynz/vscode-keybindings-for-sublime/compare/master...yasapurnama:master))
+
+ So far, I have only added keybindings for duplicating lines in Windows and Linux, but I intend to add other keybindings as I discover they are not behaving in the same way I would expect in VS Code:
+
+ ```
+// Default (Windows).sublime-keymap
+
+        {"keys": ["alt+shift+down"], "command": "duplicate_line" },
+        {"keys": [ "alt+shift+up"], "command": "duplicate_line" }
+
+
+ ```
+
+ ```
+// Default (Linux).sublime-keymap
+
+        {"keys": ["ctrl+alt+shift+down"], "command": "duplicate_line" },
+        {"keys": [ "ctrl+alt+shift+up"], "command": "duplicate_line"
+
+ ```
+
+Navigate to the file on this repo page that correponds to your OS platform, hit "raw", copy the page and paste it into the window on the right in `Preferences => Keybindings` menu in Sublime Text
+(I recommend not editing the default settings on the left)
+
+ ```
+//  Preferences.sublime-settings
+
+{
+        "color_scheme": "Monokai.sublime-color-scheme",
+        "font_size": 11,
+        "tab_size": 2,
+        "ignored_packages":
+        [
+                "Vintage"
+        ],
+        "theme": "Adaptive.sublime-theme"
+}
+
+ ```
+
+You can grab my preferences, too, if you like.  These are added in the same way as keybindings, but under `Preferences => Settings` 
+
+ Jennynz said she uses the [Zettelklasten method](https://zettelkasten.de/) for note-taking, which looks very interesting - I recommend checking it out (it's quite comprehensive). 
+
+ The rest of this README was written by her:
+
+ [this Sublime Text extension](https://github.com/renerocksai/sublime_zk) has been the best tool that I've found that it. I prefer VS Code as a text editor, so I want to stay familiar with their main key bindings while being able to use this Zettelklasten Sublime plugin.
 
 I've picked and chosen the key bindings which I use the most, so if you have any other key bindings you'd like to recommend, please raise an issue.
 
