@@ -1,5 +1,5 @@
 # VS Code keymaps for Sublime Text 3
-### or, "the ongoing struggle of making all text editors as comfortable as possible" 
+### aka, "the ongoing struggle of making text editors as comfortable as possible" 
 ---
 
 I just started using [Sublime Text 3](https://www.sublimetext.com) for taking notes, and as a (great) replacement for `notepad.exe` in Windows.  
