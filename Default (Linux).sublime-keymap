@@ -14,5 +14,6 @@
   { "keys": ["ctrl+alt+a"], "command": "expand_selection", "args": { "to": "tag" } },
   { "keys": ["ctrl+shift+a"], "command": "toggle_comment", "args": { "block": true } },
   { "keys": ["ctrl+alt+shift+down"], "command": "duplicate_line" },
-  { "keys": ["ctrl+alt+shift+up"], "command": "duplicate_line" }
+  { "keys": ["ctrl+alt+shift+up"], "command": "duplicate_line" },
+  { "keys": ["alt+z"], "command": "wrap_lines" }
 ]
