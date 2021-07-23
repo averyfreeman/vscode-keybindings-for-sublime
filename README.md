@@ -20,7 +20,8 @@ So far, I have only added keybindings for duplicating lines in Windows and Linux
 // Default (Windows).sublime-keymap
 
        {"keys": ["alt+shift+down"], "command": "duplicate_line" },
-       {"keys": [ "alt+shift+up"], "command": "duplicate_line" }
+       {"keys": [ "alt+shift+up"], "command": "duplicate_line" },
+       { "keys": ["alt+z"], "command": "wrap_lines" }
 
 
 ```
@@ -29,7 +30,8 @@ So far, I have only added keybindings for duplicating lines in Windows and Linux
 // Default (Linux).sublime-keymap
 
        {"keys": ["ctrl+alt+shift+down"], "command": "duplicate_line" },
-       {"keys": [ "ctrl+alt+shift+up"], "command": "duplicate_line"}
+       {"keys": [ "ctrl+alt+shift+up"], "command": "duplicate_line"},
+       { "keys": ["alt+z"], "command": "wrap_lines" }
 
 ```
 
