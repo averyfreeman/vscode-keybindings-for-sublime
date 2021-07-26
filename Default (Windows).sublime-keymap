@@ -8,5 +8,7 @@
   { "keys": ["alt+down"], "command": "swap_line_down" },
   { "keys": ["alt+shift+down"], "command": "duplicate_line" },
   { "keys": ["alt+shift+up"], "command": "duplicate_line" },
-  { "keys": ["alt+z"], "command": "wrap_lines" }
+  { "keys": ["alt+z"], "command": "toggle_setting", "args": {
+  "setting": "word_wrap" }
+  }
 ]

@@ -14,14 +14,16 @@ There are a lot of [Sublime-to-VSCode keymap packages](https://marketplace.visua
 
 - [Compare](<(https://github.com/jennynz/vscode-keybindings-for-sublime/compare/master...yasapurnama:master)>)
 
-So far, I have only added keybindings for duplicating lines in Windows and Linux, but I intend to add other keybindings as I discover they are not behaving in the same way I would expect after coming from VS Code:
+So far, I have only added a few key bindings for duplicating lines and word wrap in Windows and Linux, but there are a bunch from yasapurnama I am building on.  I intend to add other keybindings as I discover they are not behaving in the same way I would expect after coming from VS Code.  If you'd like to see the full list, open the keymap file. Here's some examples:
 
 ```
 // Default (Windows).sublime-keymap
 
-       {"keys": ["alt+shift+down"], "command": "duplicate_line" },
-       {"keys": [ "alt+shift+up"], "command": "duplicate_line" },
-       { "keys": ["alt+z"], "command": "wrap_lines" }
+ {"keys": ["alt+shift+down"], "command": "duplicate_line" },
+ {"keys": [ "alt+shift+up"], "command": "duplicate_line" },
+ { "keys": ["alt+z"], "command": "toggle_setting", "args": {
+   "setting": "word_wrap" }
+ }
 
 
 ```
@@ -29,9 +31,11 @@ So far, I have only added keybindings for duplicating lines in Windows and Linux
 ```
 // Default (Linux).sublime-keymap
 
-       {"keys": ["ctrl+alt+shift+down"], "command": "duplicate_line" },
-       {"keys": [ "ctrl+alt+shift+up"], "command": "duplicate_line"},
-       { "keys": ["alt+z"], "command": "wrap_lines" }
+ {"keys": ["ctrl+alt+shift+down"], "command": "duplicate_line" },
+ {"keys": [ "ctrl+alt+shift+up"], "command": "duplicate_line"},
+ { "keys": ["alt+z"], "command": "toggle_setting", "args": {
+   "setting": "word_wrap" }
+ }
 
 ```
 
@@ -44,14 +48,14 @@ You can grab my preferences, too, if you like. These are added in the same way a
 //  Preferences.sublime-settings
 
 {
-       "color_scheme": "Monokai.sublime-color-scheme",
-       "font_size": 11,
-       "tab_size": 2,
-       "ignored_packages":
-       [
-               "Vintage"
-       ],
-       "theme": "Adaptive.sublime-theme"
+   "color_scheme": "Monokai.sublime-color-scheme",
+   "font_size": 11,
+   "tab_size": 2,
+   "ignored_packages":
+   [
+           "Vintage"
+   ],
+   "theme": "Adaptive.sublime-theme"
 }
 
 ```
