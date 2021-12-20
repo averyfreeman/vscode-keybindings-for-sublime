@@ -15,8 +15,10 @@
   { "keys": ["ctrl+shift+a"], "command": "toggle_comment", "args": {
     "block": true }
   },
-  { "keys": ["ctrl+alt+shift+down"], "command": "duplicate_line" },
-  { "keys": ["ctrl+alt+shift+up"], "command": "duplicate_line" },
+  { "keys": ["alt+shift+up"], "command": "duplicate_line" },
+  { "keys": ["alt+shift+down"], "command": "duplicate_line" },
+  { "keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} },
   { "keys": ["alt+z"], "command": "toggle_setting", "args": {
   "setting": "word_wrap" }
   }
