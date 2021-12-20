@@ -6,7 +6,7 @@
 
 #### "Change is hard! For the love of god, please make it stop!"
 
-(part two)[https://github.com/averyfreeman/vscode-windows-keybindings-for-linux-users]
+[part two](https://github.com/averyfreeman/vscode-windows-keybindings-for-linux-users)
 
 Everyone has a particular kinetic motion they are used to, speaks to them, makes them feel comfortable, and gives them that warm, fuzzy feeling akin to a Courvoisier in front of a fire on a bear skin rug at a ski resort in the Swiss Alps. Like they're one with their keyboard - the distance between them and their keyboard disappears with their choice, and they are less human being than a borg fully assimilated, the clack sounding more heroically amiable than Sir Patrick Stewart after an epically first-rate fluffing. 
 
